@@ -6,10 +6,19 @@
   <title>Document</title>
 </head>
 <body>
-  <div>welcome to the world!! wow---new!!</div>
+  <div id="microphone" class="bg-primary"></div>
+  <button onclick="createMicrophone()">获取麦克风</button>
   <script src="./lib/streamer_sdk.bundle.js"></script>
+  <script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
+  <script src="./js/index.js"></script>
   <script>
-    console.log('test', StreamerSdk)
+    function addDebuggLog() {
+      const search = location.search?.includes('debugger=true')
+      if (search) {
+        new VConsole()
+      }
+    }
+    addDebuggLog()
   </script>
 </body>
 </html>
