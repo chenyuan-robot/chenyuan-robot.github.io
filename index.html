@@ -7,9 +7,12 @@
 </head>
 <body>
   <div>welcome to the world!! wow---new!!</div>
+  <div id="flag"></div>
   <script src="./lib/streamer_sdk.bundle.js"></script>
   <script>
     console.log('test', StreamerSdk)
+    const number = Object.keys(StreamerSdk).length
+    document.getElementById('flag').innerHTML = number
   </script>
 </body>
 </html>
