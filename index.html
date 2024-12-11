@@ -4,10 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
   <div id="microphone" class="bg-primary"></div>
   <button onclick="createMicrophone()">获取麦克风</button>
+  <div id="room">
+    <div id="gap-tb">创建房间</div>
+    <input type="text" placeholder="请给房间号起个名字">
+    <input type="text" placeholder="请给自己起个名字">
+  </div>
   <script src="./lib/streamer_sdk.bundle.js"></script>
   <script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
   <script src="./js/index.js"></script>
