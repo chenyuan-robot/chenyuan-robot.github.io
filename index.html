@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div>welcome to the world!! wow---new--chen--dear!!</div>
+  <div>welcome to the world!! wow---new--chen!!</div>
   <div id="flag" class="bg-primary"></div>
   <button onclick="createMicrophone()">获取麦克风</button>
   <script src="./lib/streamer_sdk.bundle.js"></script>
@@ -16,7 +16,7 @@
         console.log("tracks", tracks)
         alert(1)
       }).catch((e) => {
-        alert(2)
+        alert(JSON.stringify(e))
         console.log("error", e)
       })
     }
