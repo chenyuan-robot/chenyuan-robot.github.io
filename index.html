@@ -6,22 +6,19 @@
   <title>Document</title>
 </head>
 <body>
-  <div>welcome to the world!! wow---new--chen!!</div>
+  <div>welcome to the world!! wow---new--chen--dear!!</div>
   <div id="flag" class="bg-primary"></div>
-  <button onclick="createMicrophone">获取麦克风</button>
+  <button onclick="createMicrophone()">获取麦克风</button>
   <script src="./lib/streamer_sdk.bundle.js"></script>
   <script>
-    window.onload = function() {
-      console.log('test', StreamerSdk)
-      function createMicrophone() {
-        StreamerSdk.createMicrophoneTracks().then((tracks) => {
-          console.log("tracks", tracks)
-          alert(1)
-        }).catch((e) => {
-          alert(2)
-          console.log("error", e)
-        })
-      }
+    function createMicrophone() {
+      StreamerSdk.createMicrophoneTracks().then((tracks) => {
+        console.log("tracks", tracks)
+        alert(1)
+      }).catch((e) => {
+        alert(2)
+        console.log("error", e)
+      })
     }
   </script>
 </body>
