@@ -7,12 +7,18 @@
 </head>
 <body>
   <div>welcome to the world!! wow---new!!</div>
-  <div id="flag"></div>
+  <div id="flag" class="bg-primary"></div>
+  <button>获取麦克风</button>
   <script src="./lib/streamer_sdk.bundle.js"></script>
   <script>
-    console.log('test', StreamerSdk)
-    const number = Object.keys(StreamerSdk).length
-    document.getElementById('flag').innerHTML = number
+    window.onload = function() {
+      console.log('test', StreamerSdk)
+      StreamerSdk.createMicrophoneTracks().then((tracks) => {
+        console.log("tracks", tracks)
+      }).catch((e) => {
+        console.log("error", e)
+      })
+    }
   </script>
 </body>
 </html>
