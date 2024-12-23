@@ -76,6 +76,7 @@ function joinRoom(roomId, name)
             let videoTracks = [];
             try {
                 videoTracks = await StreamerSdk.createCameraTracks();
+                console.log("videoTracks__videoTracks", videoTracks)
                 streamClient.publishToRoom(`${name}-video`, videoTracks[0]);
             } catch (err) {
                 console.log(`createDesktopTracks failed, err: ${err}`);
