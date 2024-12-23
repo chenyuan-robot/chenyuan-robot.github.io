@@ -6,7 +6,7 @@ var peerContainer = document.getElementById('peer_container');
 
 const APPID = 0;
 const TOKEN = "";
-const SERVER_URL = "wss://voyance.cowarobot.com/ws/server/debug2/signal/client";
+const SERVER_URL = "wss://media.wvp.cowarobot.com/ws/server/debug2/signal/client";
 var streamClient;
 let myTracks = [];
 
