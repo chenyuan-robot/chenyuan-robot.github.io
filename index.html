@@ -1,102 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streamer JS SDK Room Demo</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        width: 100vw;
-        height: 100vh;
-      }
-      .main {
-          width: 100%;
-          height: calc(100% - 160px);
-          overflow-y: scroll;
-      }
-      .peer-container {
-          display: grid;
-          grid-template-columns: repeat(2,minmax(0,1fr));
-          gap: 1rem;
-      }
-      .meview-container {
-        position: relative;
-      }
-      .meview-container label {
-        display: block;
-        text-align: center;
-      }
-      .meview-container video {
-          width: 100%;
-          object-fit: fill;
-      }
-      .peerview-container label {
-        display: block;
-        text-align: center;
-      }
-      .peerview-container video {
-          width: 100%;
-          object-fit: fill;
-      }
-      .header {
-        text-align: center;
-        height: 40px;
-        line-height: 40px;
-        font-weight: bolder;
-      }
-      .room-container {
-        width: 100%;
-        height: 110px;
-        margin-top: 5px;
-      }
-      .margin-x {
-        margin: 0 20px;
-      }
-      .margin-y {
-        margin-top: 10px;
-      }
-      .center {
-        display: flex;
-        justify-content: center;
-      }
-    </style>
-</head>
-<body>
-    <div class="header">聊天室111</div>
-    <div class="main">
-      <div class="peer-container" id="peer_container"></div>
-    </div>
-    <div class="room-container" id="room_container">
-      <div class="center">
-        <label class="margin-x">口令: </label>
-        <input type="text" id="room_id" style="width: 240px;"></input>
-      </div>
-      <div class="center margin-y">
-        <label class="margin-x">昵称: </label>
-        <input type="text" id="my_name" style="width: 240px;"></input>
-      </div>
-      <div class="center margin-y"> 
-        <button id="bt_join_room" class="margin-x">加入房间</button>
-        <button id="bt_leave_room">退出房间</button>
-      </div>
-    </div>
-    <!-- <script src="./lib/adapter-latest.js"></script>
-    <script src="./lib/streamer_sdk.bundle.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./lib/log.js"></script> -->
-    <script>
-      function addDebuggLog() {
-        // const search = location.search?.includes('debugger=true')
-        // if (search) {
-        new VConsole()
-        // }
-      }
-      addDebuggLog()
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <script type="module" crossorigin src="/assets/index-hflLI_CH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-lgQU21AG.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
